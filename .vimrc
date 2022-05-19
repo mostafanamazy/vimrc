@@ -1,6 +1,11 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
+" All your searches will be case insensitive
+set ignorecase
+" Your search will be case sensitive if it contains an uppercase letter
+set smartcase
+
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
