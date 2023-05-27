@@ -15,6 +15,8 @@ Plugin 'ycm-core/YouCompleteMe'
 " All of your Plugins must be added before the following line
 " Track the engine.
 Plugin 'SirVer/ultisnips'
+" Edit config
+Plugin 'editorconfig/editorconfig-vim'
 
 " Snippets are separated from the engine. Add this if you want them:
 Plugin 'honza/vim-snippets'
@@ -57,6 +59,7 @@ function! LANG_MAKEFILE()
     setlocal softtabstop=8
 endfunction
 autocmd FileType make call LANG_MAKEFILE()
+"autocmd FileType python compiler pylint
 "call plug#begin('~/.vim/plugged')
 "Plug 'rust-lang/rust.vim'
 "call plug#end()
